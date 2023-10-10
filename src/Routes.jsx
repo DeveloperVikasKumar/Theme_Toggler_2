@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { ThemeProvider } from './context/theme'
-// import {ThemeButton} from './components/ThemeButton'
-import ItemCard from './components/ItemCard'
-import ThemeButton from './components/ThemeButton'
+import { Header, Footer } from './components'
+import { Outlet } from 'react-router-dom'
 
-
-const App = () => {
+const Routes = () => {
   const [themeMode,setThemeMode] = useState('light')
 
   const darkTheme = function() {
@@ -22,10 +20,11 @@ const App = () => {
   
   return (
     <ThemeProvider value={{themeMode, darkTheme, lightTheme }}>
-      <ThemeButton/>
-      <ItemCard/>
+      <Header/>
+      <Outlet />
+      <Footer/>
     </ThemeProvider>
   )
 }
 
-export default App
+export default Routes
