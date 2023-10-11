@@ -1,9 +1,11 @@
 import React from 'react'
+import './css/footer.css'
 
 const Footer = () => {
   return (
     <footer>
-      Footer
+      <p id="footer-first-line">Made by Vikas Kr.</p>
+      <p id="footer-second-line">For more information visit to github account : <a href="https://github.com/DeveloperVikasKumaR">DeveloperVikasKumaR</a></p>
     </footer>
   )
 }

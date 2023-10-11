@@ -1,0 +1,22 @@
+footer{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid red;
+}
+#footer-first-line{
+    font-size: 17px;
+}
+#footer-second-line{
+    font-size: 16px;
+}
+footer p a{
+    color: #1877f2;
+    text-decoration: none;
+}
+footer p a:hover{
+    text-decoration: underline;
+} 

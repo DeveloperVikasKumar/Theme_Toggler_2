@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/header.css'
 import useTheme from '../context/theme'
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
   return (
     <header>
       <label htmlFor="theme-mode-radio"><input value='dark' checked={themeMode==='light'}  onChange={handleThemeChange} type="radio" name='theme-mode-radio' id='theme-mode-radio'/>Light Mode</label>
-        <label htmlFor="theme-mode-radio"><input value='light'  onChange={handleThemeChange} type="radio" name='theme-mode-radio' id='theme-mode-radio'/>Dark Mode</label>
+      <label htmlFor="theme-mode-radio"><input value='light'  onChange={handleThemeChange} type="radio" name='theme-mode-radio' id='theme-mode-radio'/>Dark Mode</label>
     </header>
   )
 }
